@@ -16,11 +16,11 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
-// INCLUDE HERE THE LINK TO THE GIT REPOSITORY AS A COMMENT!!!!
+// https://github.com/Guilherme0413/RentACar
 
 
-// INCLUDE HERE THE FULL NAME AND STUDENT NUMBER OF BOTH TEAM MEMBERS 
-// AS A COMMENT!!!!
+// Danrlei da Silva Martins 2020322
+// Guilherme Bezerra de Oliveira 2020316
 
 
 
@@ -66,5 +66,6 @@ public class Driver {
         System.out.println(rentACar.bookCar(Month.MARCH, 10, Make.FORD, 12));
         
     }
+    
 
 }
