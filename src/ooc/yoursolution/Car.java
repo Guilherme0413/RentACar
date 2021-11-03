@@ -13,6 +13,8 @@ public class Car implements CarInterface {
     //Attributes
     public String carMake;
     public double dailyRate;
+    public int id;
+    public Map calendar;
 
     //Constructor
     public Car(String carMake, int dailyRate) {
@@ -57,7 +59,7 @@ public class Car implements CarInterface {
 
     @Override
     public int getId() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return id;
     }
 
     @Override
