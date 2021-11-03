@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package ooc.yoursolution;
 
 import java.util.ArrayList;
@@ -16,16 +11,19 @@ import ooc.enums.Month;
  */
 public class RentACar implements RentACarInterface {
 
-    List<CarInterface> carList;
+    ArrayList<Car> carList;
 
     public RentACar() {
         carList = new ArrayList<>();
     }
-
+    
+    public void addCar(Car item) {
+        this.carList.add(item);
+    }
+    
     @Override
     public List<CarInterface> getCars() {
-
-        return carList;
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override

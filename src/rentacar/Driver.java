@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package rentacar;
 
 // This line will give you an error until you create the needed class.
@@ -18,8 +13,8 @@ import java.io.FileReader;
 import java.io.IOException;
 
 // https://github.com/Guilherme0413/RentACar
-// Danrlei da Silva Martins 2020322
-// Guilherme Bezerra de Oliveira 2020316
+// Danrlei da Silva Martins - 2020322
+// Guilherme Bezerra de Oliveira - 2020316
 /**
  *
  * @author apont

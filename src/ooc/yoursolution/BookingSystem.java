@@ -12,7 +12,7 @@ public class BookingSystem implements BookingSystemInterface {
     @Override
     public RentACarInterface setupRentACar(BufferedReader in) throws IOException {
 
-        RentACarInterface cars = new RentACar();
+        RentACarInterface rentACar = new RentACar();
 
         in.readLine();
 
@@ -24,16 +24,16 @@ public class BookingSystem implements BookingSystemInterface {
 
             data = textFile.split(":"); //split String between ":" to separate data
 
-            Car vehicles = new Car(data[0], Integer.parseInt(data[1])); //create a car object and store data
-
-            cars.getCars();
+            Car car = new Car(data[0], Integer.parseInt(data[1])); //create a car object and store data
+            
+            rentACar.getCars();
 
             textFile = in.readLine();
         }
 
         in.close();
 
-        return cars;
+        return rentACar;
 
     }
 }
