@@ -8,19 +8,17 @@ import ooc.enums.Month;
  *
  * @author Danrlei
  */
-public class Car implements CarInterface{
-    
+public class Car implements CarInterface {
+
     //Attributes
-    private String carMake;
-    private int dailyRate;
-    private int amountOfCars;
-    
+    public String carMake;
+    public double dailyRate;
+
     //Constructor
-    public Car (String carMake, int dailyRate, int amountOfCars ){
+    public Car(String carMake, int dailyRate) {
         this.carMake = carMake;
         this.dailyRate = dailyRate;
-        this.amountOfCars = amountOfCars;
-    }   
+    }
 
     @Override
     public Map<Month, boolean[]> createAvailability() {
@@ -29,22 +27,22 @@ public class Car implements CarInterface{
 
     @Override
     public Make getMake() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return Make.valueOf(carMake);
     }
 
     @Override
     public void setMake(Make make) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        this.carMake = make.toString();
     }
 
     @Override
     public double getRate() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return dailyRate;
     }
 
     @Override
     public void setRate(double rate) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        this.dailyRate = rate;
     }
 
     @Override
@@ -71,8 +69,5 @@ public class Car implements CarInterface{
     public boolean book(Month month, int day) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-    
 
-    
-    
 }

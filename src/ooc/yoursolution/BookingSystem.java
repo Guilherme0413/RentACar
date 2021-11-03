@@ -24,7 +24,7 @@ public class BookingSystem implements BookingSystemInterface {
 
             data = textFile.split(":"); //split String between ":" to separate data
 
-            Car vehicles = new Car(data[0], Integer.parseInt(data[1]), Integer.parseInt(data[2])); //create a car object and store data
+            Car vehicles = new Car(data[0], Integer.parseInt(data[1])); //create a car object and store data
 
             cars.getCars();
 
