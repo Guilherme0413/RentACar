@@ -16,19 +16,16 @@ import ooc.enums.Month;
  */
 public class RentACar implements RentACarInterface {
 
-    ArrayList<Car> carList;
+    List<CarInterface> carList;
 
     public RentACar() {
         carList = new ArrayList<>();
     }
 
-    public void addCar(Car item) {
-        this.carList.add(item);
-    }
-
     @Override
     public List<CarInterface> getCars() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+
+        return carList;
     }
 
     @Override
